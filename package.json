@@ -1,0 +1,14 @@
+{
+  "name": "imagemini",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "copy": "cp -r src/* dist/",
+    "minify": "npm run copy && imageoptim 'dist/**/*.(jpg|png)' && svgo dist/img/svg/*.svg"
+  },
+  "keywords": [],
+  "author": "@kazoo0217",
+  "license": "MTI"
+}
